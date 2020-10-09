@@ -10,7 +10,6 @@ var LinkedList = function() {
     } else if (this.head.next === null) {
       this.head.next = this.tail;
     }
-
   };
 
   list.removeHead = function() {
@@ -22,12 +21,11 @@ var LinkedList = function() {
   };
 
   list.contains = function(target) {
-    // var result = false;
-    // iterate over the list values
-    // if current values matches target
-    // update result to true
-
-    // return result
+    if (this.tail.value === target || this.head.value === target) {
+      return true;
+    } else {
+      return false;
+    }
   };
 
   return list;
